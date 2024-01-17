@@ -1,3 +1,76 @@
-h1 {
-    color: red;
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.bg-second {
+    background-color: #009B4D;
+    
+}
+
+
+#slide {
+    position: fixed;
+    left: 30%;
+    right: 30%;
+    height: 55px;
+    top: -100px;
+    z-index: 10000000;
+    animation-name: slidein; 
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    
+    
+}
+
+@keyframes slidein {
+    0% {
+      top: -100px;
+      
+    }
+    70% {
+        top: 0;
+        
+      }
+    100% {
+      top: 0;
+      
+    }
+  }
+  
+#buttonHover:hover {
+  background-color: #009B4D !important;
+  color: black !important;
+}
+
+#logo {
+  height: 25vh;
+ 
+}
+
+#podium1 {
+  height: 27vh;
+  overflow: auto;
+  
+}
+
+#podium2 {
+  height: 22vh;
+  overflow: auto;
+}
+
+#podium3 {
+  height: 20vh;
+  background-color: #614E1A;
+  overflow: auto;
 }
